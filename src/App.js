@@ -1,10 +1,14 @@
 import "./App.css";
-import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/sections/AboutSection";
+import HeroSection from "./components/sections/HeroSection";
+import ProjectsSection from "./components/sections/ProjectsSection";
 
 function App() {
   return (
     <div className="App">
       <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
     </div>
   );
 }

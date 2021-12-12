@@ -1,26 +1,21 @@
 import React from "react";
 
-const ProjectsSection = () => {
-  const projects = [];
+const ProjectDetails = ({ project }) => {
+  const { title, description, image, source, live } = project;
 
-  const projectsContent = (
+  return (
     <div class="row">
       <div class="col-lg-4 col-sm-12">
         <div class="project-wrapper__text load-hidden">
-          <h3 class="project-wrapper__text-title">Project Title 1</h3>
+          <h3 class="project-wrapper__text-title">{title}</h3>
           <div>
-            <p class="mb-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Excepturi neque, ipsa animi maiores repellendus distinctio aperiam
-              earum dolor voluptatum consequatur blanditiis inventore debitis
-              fuga numquam voluptate ex architecto itaque molestiae.
-            </p>
+            <p class="mb-4">{description}</p>
           </div>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--hero"
-            href="#!"
+            href={live}
           >
             See Live
           </a>
@@ -28,7 +23,7 @@ const ProjectsSection = () => {
             rel="noreferrer"
             target="_blank"
             class="cta-btn text-color-main"
-            href="#!"
+            href={source}
           >
             Source Code
           </a>
@@ -44,19 +39,13 @@ const ProjectsSection = () => {
               data-tilt-max-glare="0.5"
               class="thumbnail rounded js-tilt"
             >
-              <img
-                alt="Project Image"
-                class="img-fluid"
-                src="assets/project.jpg"
-              />
+              <img alt="Project Image" class="img-fluid" src={image} />
             </div>
           </a>
         </div>
       </div>
     </div>
   );
-
-  return;
 };
 
-export default ProjectsSection;
+export default ProjectDetails;

@@ -66,6 +66,13 @@ Order: Base + Typography > Generar Layout + Grid > Page Layout > Components
   // Fall for text-gradient not supported in IE11
   color: $secondary-color;
   -webkit-text-fill-color: $secondary-color; // fallback
+  // This mean that if the brower support the feature where text can has graident color
+
+  // To set text with gradient color:
+  // background-image: <Gradient>;
+  // background-clip: text
+  // text-fill-color: transparant
+
   @supports (-webkit-background-clip: text) or (background-clip: text) {
     background-image: linear-gradient(
       135deg,
