@@ -5,11 +5,11 @@ import ProjectDetails from "../ProjectDetails";
 const ProjectsSection = () => {
   return (
     <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+      <div className="container">
+        <div className="project-wrapper">
+          <h2 className="section-title dark-blue-text">Projects</h2>
           {projectsList.map((project) => (
-            <ProjectDetails project={project} />
+            <ProjectDetails key={project.key} project={project} />
           ))}
         </div>
       </div>

@@ -5,9 +5,22 @@ html {
   //   &.sr .load-hidden {
   // visibility: hidden;
   //   }
+
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 5rem 0rem;
+
+  @include respone(phone) {
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

@@ -1,5 +1,5 @@
 #hero {
-  background-color: pink;
+  // background-color: pink;
   min-height: 100vh;
   height: 100vh;
   display: flex;
@@ -10,11 +10,11 @@
   color: $dark-blue-text;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
-  //   top: 0;
-  //   left: 0;
-  //   bottom: 0;
-  //   right: 0;
-  //   z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 
   //   Incase I want to make a background img
   /* background: url("/src/assets/[your-image].png");

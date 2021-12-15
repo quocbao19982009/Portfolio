@@ -3,6 +3,7 @@ import projectImage from "./project.jpg";
 const projectsList = [
   {
     title: "Gamers Corner",
+    key: "1",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendus distinctio aperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate ex architecto itaque molestiae.",
     image: projectImage,
@@ -11,6 +12,7 @@ const projectsList = [
   },
   {
     title: "DevSeeker",
+    key: "2",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendus distinctio aperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate ex architecto itaque molestiae.",
     image: projectImage,
@@ -19,6 +21,7 @@ const projectsList = [
   },
   {
     title: "Netflix Clone",
+    key: "3",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendus distinctio aperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate ex architecto itaque molestiae.",
     image: projectImage,

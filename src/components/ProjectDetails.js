@@ -1,20 +1,21 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 
 const ProjectDetails = ({ project }) => {
   const { title, description, image, source, live } = project;
 
   return (
-    <div class="row">
-      <div class="col-lg-4 col-sm-12">
-        <div class="project-wrapper__text load-hidden">
-          <h3 class="project-wrapper__text-title">{title}</h3>
+    <div className="row">
+      <div className="col-lg-4 col-sm-12">
+        <div className="project-wrapper__text load-hidden">
+          <h3 className="project-wrapper__text-title">{title}</h3>
           <div>
-            <p class="mb-4">{description}</p>
+            <p className="mb-4">{description}</p>
           </div>
           <a
             rel="noreferrer"
             target="_blank"
-            class="cta-btn cta-btn--hero"
+            className="cta-btn cta-btn--hero"
             href={live}
           >
             See Live
@@ -22,25 +23,26 @@ const ProjectDetails = ({ project }) => {
           <a
             rel="noreferrer"
             target="_blank"
-            class="cta-btn text-color-main"
+            className="cta-btn text-color-main"
             href={source}
           >
             Source Code
           </a>
         </div>
       </div>
-      <div class="col-lg-8 col-sm-12">
-        <div class="project-wrapper__image load-hidden">
+      <div className="col-lg-8 col-sm-12">
+        <div className="project-wrapper__image load-hidden">
           <a rel="noreferrer" href="#!" target="_blank">
-            <div
+            <Tilt
               data-tilt
-              data-tilt-max="4"
-              data-tilt-glare="true"
-              data-tilt-max-glare="0.5"
-              class="thumbnail rounded js-tilt"
+              tiltMaxAngleX="4"
+              tiltMaxAngleY="4"
+              glareEnable="true"
+              glareMaxOpacity="0.5"
+              className="thumbnail rounded js-tilt"
             >
-              <img alt="Project Image" class="img-fluid" src={image} />
-            </div>
+              <img alt="Project" className="img-fluid" src={image} />
+            </Tilt>
           </a>
         </div>
       </div>
