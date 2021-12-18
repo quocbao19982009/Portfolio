@@ -1,4 +1,5 @@
 .header {
+  transition: all 10s ease-in;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -122,5 +123,34 @@
     .fa-bars {
       display: none;
     }
+  }
+}
+
+.sticky {
+  .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+    background-image: linear-gradient(
+      135deg,
+      rgb(2, 170, 176, 0.6) 0%,
+      rgb(0, 205, 172, 0.6) 100%
+    );
+    .main-nav {
+      &-link {
+        color: $dark-blue-text;
+        font-weight: 500;
+      }
+    }
+  }
+
+  #hero {
+    margin-top: 7.8rem;
   }
 }

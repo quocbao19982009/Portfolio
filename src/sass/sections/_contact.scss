@@ -18,6 +18,14 @@
     -webkit-clip-path: none;
   }
 
+  .email {
+    margin-bottom: 2rem;
+
+    a {
+      color: $white-color;
+    }
+  }
+
   .contact-wrapper {
     margin-top: 3.2rem;
     padding: 0 2rem;
