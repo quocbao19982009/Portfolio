@@ -12,6 +12,7 @@ import css from "../assets/skills/css-icon.svg";
 import nodejs from "../assets/skills/nodejs-icon.svg";
 import vscode from "../assets/skills/vscode-icon.svg";
 import redux from "../assets/skills/redux-icon.svg";
+import jest from "../assets/skills/jest-icon.svg";
 
 const SkillsSet = () => {
   return (
@@ -29,7 +30,7 @@ const SkillsSet = () => {
           </li>
           <li>
             <img src={javascript} alt="" srcset="" />
-            <p>JavaScrips</p>
+            <p>JavaScript</p>
           </li>
           <li>
             <img src={react} alt="" srcset="" />
@@ -57,7 +58,7 @@ const SkillsSet = () => {
           </li>
           <li>
             <img src={vscode} alt="" srcset="" />
-            <p>Vscode</p>
+            <p>VScode</p>
           </li>
         </ul>
       </div>
@@ -75,6 +76,10 @@ const SkillsSet = () => {
           <li>
             <img src={mongoDb} alt="" srcset="" />
             <p>MongoDB</p>
+          </li>
+          <li>
+            <img src={jest} alt="" srcset="" />
+            <p>Jest</p>
           </li>
         </ul>
       </div>

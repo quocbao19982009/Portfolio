@@ -18,7 +18,7 @@ const HeroSection = () => {
             <h1 className="hero-title load-hidden">
               Hi, my name is <span className="text-color-main">Bao Nguyen</span>
               <br />
-              I'm the Website Developer.
+              I'm a Frontend Developer.
             </h1>
           </Fade>
           <Fade

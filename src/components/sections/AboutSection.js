@@ -2,6 +2,7 @@ import React from "react";
 import profileImg from "./../../assets/profile.jpg";
 import { Fade } from "react-reveal";
 import SkillsSet from "../SkillsSet";
+import resume from "../../assets/Bao-Nguyen-Resume.pdf";
 
 const AboutSection = () => {
   const animationCondition = window.innerWidth > 768 ? true : false;
@@ -12,7 +13,7 @@ const AboutSection = () => {
         <h2 className="section-title load-hidden">About me</h2>
         <div className="row about-wrapper">
           <div className="col-md-6 col-sm-12">
-            <Fade ssrFadeout delay={600} bottom distance="30px">
+            <Fade ssrFadeout delay={600} left distance="30px">
               <div className="about-wrapper__image load-hidden">
                 <img
                   alt="Bao Nguyen"
@@ -28,7 +29,7 @@ const AboutSection = () => {
             <Fade
               ssrFadeout
               delay={1000}
-              left={animationCondition}
+              right={animationCondition}
               bottom={!animationCondition}
               distance="30px"
             >
@@ -49,8 +50,7 @@ const AboutSection = () => {
                     rel="noreferrer"
                     target="_blank"
                     className="cta-btn cta-btn--resume"
-                    href="/#"
-                    //   href="assets/resume.pdf"
+                    href={resume}
                   >
                     View Resume
                   </a>
@@ -59,7 +59,7 @@ const AboutSection = () => {
             </Fade>
           </div>
         </div>
-        <Fade ssrFadeout delay={1500} top distance="30px">
+        <Fade ssrFadeout delay={1500} bottom distance="30px">
           <SkillsSet />
         </Fade>
       </div>

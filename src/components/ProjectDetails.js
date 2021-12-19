@@ -20,8 +20,10 @@ const ProjectDetails = ({ project }) => {
             <div>
               <p className="mb-4">{description}</p>
               <p className="mb-4 note">{note}</p>
-              <p className="mb-4 technologies">
-                {`Technologies: ${technologies}`}
+              <p className="mb-4">
+                {technologies.map((tech) => {
+                  return <span className="tech">{`#${tech}`}</span>;
+                })}
               </p>
             </div>
             <a

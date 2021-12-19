@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Fade } from "react-reveal";
+import resume from "../assets/Bao-Nguyen-Resume.pdf";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -30,7 +31,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a className="main-nav-link nav-cta" href="#cta">
+              <a className="main-nav-link nav-cta" href={resume}>
                 Resume
               </a>
             </li>

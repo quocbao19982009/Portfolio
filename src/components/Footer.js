@@ -8,13 +8,18 @@ const Footer = () => {
           <i className="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div className="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/bao-nguyen-44ba20165/"
+            target="_blank"
+          >
             <i className="fa-brands fa-linkedin"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://github.com/quocbao19982009"
+            target="_blank"
+          >
             <i className="fa-brands fa-github"></i>
           </a>
         </div>
