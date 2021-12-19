@@ -24,7 +24,8 @@ const projectsList = [
     note: "Understanding backend is important for a front-end developer so this project was made to practice creating simple backend applications where RESTFUL API was implemented.",
     source: "https://github.com/quocbao19982009/DevSeeker",
     live: "https://devseekerapp.herokuapp.com/",
-    technologies: ["React", "NodeJS", "Express", "MongoDB"],
+    technologies: ["React", "Node Js", "MongoDB", "Express Js"],
+    // technologies: ["React", "Restful API", "Redux", "Bootstrap"],
   },
   {
     title: "Netflix Clone",
