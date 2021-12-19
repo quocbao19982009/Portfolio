@@ -15,22 +15,22 @@ const Header = () => {
       <div className={classHeader}>
         <nav className="main-nav">
           <ul className="main-nav-list">
-            <li>
+            <li onClick={openNavHandler}>
               <a className="main-nav-link" href="#about">
                 About Me
               </a>
             </li>
-            <li>
+            <li onClick={openNavHandler}>
               <a className="main-nav-link" href="#projects">
                 Projects
               </a>
             </li>
-            <li>
+            <li onClick={openNavHandler}>
               <a className="main-nav-link" href="#contact">
                 Contact
               </a>
             </li>
-            <li>
+            <li onClick={openNavHandler}>
               <a className="main-nav-link nav-cta" href={resume}>
                 Resume
               </a>
