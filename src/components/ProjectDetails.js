@@ -54,7 +54,7 @@ const ProjectDetails = ({ project }) => {
           distance="30px"
         >
           <div className="project-wrapper__image load-hidden">
-            <a rel="noreferrer" href="#!" target="_blank">
+            <a rel="noreferrer" href={live} target="_blank">
               <Tilt
                 data-tilt
                 tiltMaxAngleX="4"
