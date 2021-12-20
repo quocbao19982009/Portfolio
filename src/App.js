@@ -6,7 +6,7 @@ import ContactSection from "./components/sections/ContactSection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
-import { useRef, useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
   const [sticky, setStick] = useState(false);

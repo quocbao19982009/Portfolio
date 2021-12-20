@@ -22,7 +22,7 @@ const ProjectDetails = ({ project }) => {
               <p className="mb-4 note">{note}</p>
               <p className="mb-4">
                 {technologies.map((tech) => {
-                  return <span className="tech">{`#${tech}`}</span>;
+                  return <span key={tech} className="tech">{`#${tech}`}</span>;
                 })}
               </p>
             </div>

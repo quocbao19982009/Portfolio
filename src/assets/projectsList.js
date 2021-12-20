@@ -1,4 +1,3 @@
-import projectImage from "./project.jpg";
 import gamercorner from "./projects/gamerscorner.png";
 import devseeker from "./projects/devseeker.png";
 import netflix from "./projects/netflix.png";
@@ -25,7 +24,6 @@ const projectsList = [
     source: "https://github.com/quocbao19982009/DevSeeker",
     live: "https://devseekerapp.herokuapp.com/",
     technologies: ["React", "Node Js", "MongoDB", "Express Js"],
-    // technologies: ["React", "Restful API", "Redux", "Bootstrap"],
   },
   {
     title: "Netflix Clone",

@@ -37,7 +37,11 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <button className="btn-mobile-nav" onClick={openNavHandler}>
+        <button
+          aria-label="Navbar button"
+          className="btn-mobile-nav"
+          onClick={openNavHandler}
+        >
           <div className="icon-mobile-nav">
             <i className="fa-solid fa-bars"></i>
           </div>
