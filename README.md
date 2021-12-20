@@ -8,8 +8,10 @@ Bao Nguyen's Portfolio project using React and Sass.
 
 ## Technologies
 
--- React
--- SASS
+- React
+- SASS
+- npm
+- firebase
 
 Note: project was built based on the desgin of cobiwave portfolio.
 
