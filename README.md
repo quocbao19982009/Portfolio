@@ -6,6 +6,8 @@
 
 Bao Nguyen's Portfolio project using React and Sass. 
 
+Live: https://baonguyendev.com/
+
 ## Technologies
 
 - React
