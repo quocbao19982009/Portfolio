@@ -15,7 +15,7 @@ const ContactSection = () => {
             </p>
             <p className="email">
               <a
-                className="contact-wrapper__text "
+                className="contact-wrapper__text"
                 href="mailto:quocbao19982009@email.com"
               >
                 <i className="fas fa-envelope-square"></i>{" "}

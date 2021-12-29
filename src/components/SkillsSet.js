@@ -13,6 +13,7 @@ import nodejs from "../assets/skills/nodejs-icon.svg";
 import vscode from "../assets/skills/vscode-icon.svg";
 import redux from "../assets/skills/redux-icon.svg";
 import jest from "../assets/skills/jest-icon.svg";
+import typescript from "../assets/skills/typescript-icon.svg";
 
 const SkillsSet = () => {
   return (
@@ -80,6 +81,10 @@ const SkillsSet = () => {
           <li>
             <img src={jest} alt="jest" />
             <p>Jest</p>
+          </li>
+          <li>
+            <img src={typescript} alt="jest" />
+            <p>Typescript</p>
           </li>
         </ul>
       </div>
