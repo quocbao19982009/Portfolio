@@ -1,7 +1,6 @@
 import React from "react";
 import projectsList from "../../assets/projectsList";
 import ProjectDetails from "../ProjectDetails";
-import Background from "../Background";
 const ProjectsSection = () => {
   return (
     <>
