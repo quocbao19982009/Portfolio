@@ -22,7 +22,7 @@ const HeroSection = () => {
                 Hi, my name is{" "}
                 <span className="text-color-main">Bao Nguyen</span>
                 <br />
-                I'm a Frontend Developer.
+                I'm a <i>honest</i> Fullstack Developer.
               </h1>
             </Fade>
             <Fade

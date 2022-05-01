@@ -14,57 +14,43 @@ import vscode from "../assets/skills/vscode-icon.svg";
 import redux from "../assets/skills/redux-icon.svg";
 import jest from "../assets/skills/jest-icon.svg";
 import typescript from "../assets/skills/typescript-icon.svg";
+import postgresSql from "../assets/skills/postgresql.svg";
+import github from "../assets/skills/github.svg";
+import AWS from "../assets/skills/amazon-web-services.svg";
+import mateiralUI from "../assets/skills/material-ui.svg";
+import nestjs from "../assets/skills/nestjs.svg";
+import docker from "../assets/skills/docker.svg";
 
 const SkillsSet = () => {
   return (
-    <div className="skills container">
-      <div className="skills__list ">
-        <h3>Profient Technologies:</h3>
+    <div className="skills container row">
+      <div className="skills__list col-md-12 col-sm-12">
+        <h3>Frontend Technologies:</h3>
         <ul className="skills__list-grid">
           <li>
-            <img src={html} alt="html" />
-            <p>HTML</p>
-          </li>
-          <li>
-            <img src={css} alt="css" />
-            <p>CSS</p>
-          </li>
-          <li>
-            <img src={javascript} alt="javascript" />
-            <p>JavaScript</p>
+            <img src={typescript} alt="jest" />
+            <p>Typescript</p>
           </li>
           <li>
             <img src={react} alt="react" />
             <p>React</p>
           </li>
           <li>
-            <img src={npm} alt="npm" />
-            <p>NPM</p>
+            <img src={mateiralUI} alt="react" />
+            <p>Material UI</p>
           </li>
           <li>
-            <img src={git} alt="git" />
-            <p>Git</p>
-          </li>
-          <li>
-            <img src={bootstrap} alt="bootstrap" />
-            <p>Bootstrap</p>
-          </li>
-          <li>
-            <img src={sass} alt="sass" />
-            <p>Sass</p>
+            <img src={sass} alt="react" />
+            <p>SASS</p>
           </li>
           <li>
             <img src={redux} alt="redux" />
             <p>Redux</p>
           </li>
-          <li>
-            <img src={vscode} alt="vscode" />
-            <p>VScode</p>
-          </li>
         </ul>
       </div>
-      <div className="skills__list ">
-        <h3>Familiar with:</h3>
+      <div className="skills__list col-md-12 col-sm-12">
+        <h3>Backend Technologies:</h3>
         <ul className="skills__list-grid">
           <li>
             <img src={nodejs} alt="nodejs" />
@@ -75,16 +61,41 @@ const SkillsSet = () => {
             <p>ExpressJS</p>
           </li>
           <li>
+            <img src={nestjs} alt="express" />
+            <p>NestJS</p>
+          </li>
+          <li>
             <img src={mongoDb} alt="mongoDb" />
             <p>MongoDB</p>
+          </li>
+          <li>
+            <img src={postgresSql} alt="mongoDb" />
+            <p>PostgresSQL</p>
+          </li>
+        </ul>
+      </div>
+      <div className="skills__list col-md-12 col-sm-12">
+        <h3>DevOps Technologies:</h3>
+        <ul className="skills__list-grid">
+          <li>
+            <img src={git} alt="git" />
+            <p>Git</p>
           </li>
           <li>
             <img src={jest} alt="jest" />
             <p>Jest</p>
           </li>
           <li>
-            <img src={typescript} alt="jest" />
-            <p>Typescript</p>
+            <img src={github} alt="express" />
+            <p>Github Action</p>
+          </li>
+          <li>
+            <img src={docker} alt="mongoDb" />
+            <p>MongoDB</p>
+          </li>
+          <li>
+            <img src={AWS} alt="mongoDb" />
+            <p>Amazon Web Service</p>
           </li>
         </ul>
       </div>

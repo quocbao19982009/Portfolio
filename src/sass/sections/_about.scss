@@ -18,18 +18,28 @@
     clip-path: none;
   }
 
+  .mycat {
+    cursor: pointer;
+    color: #264646c6;
+  }
   .about-wrapper {
     &__image {
       display: flex;
-      height: 100%;
+      height: 400px;
       align-items: center;
       justify-content: center;
-
       @include respone(tab-land) {
         height: 100%;
       }
       @include respone(tab-port-sm) {
-        padding-bottom: 6.4rem;
+        padding-bottom: 25rem;
+      }
+      .hidden {
+        opacity: 0;
+      }
+      img {
+        transition: opacity 0.5s ease;
+        position: absolute;
       }
     }
 
@@ -81,9 +91,7 @@
   text-align: center;
   font-size: 0.7rem;
   border-radius: 20px;
-  @include respone(phone) {
-    // padding-top: 1rem;
-  }
+
   &__list {
     h3 {
       margin-bottom: 2rem;
@@ -93,22 +101,31 @@
         margin-top: 3rem;
       }
     }
+    &:nth-child(3) {
+      margin-bottom: 10rem;
+      @include respone(tab-land) {
+        margin-bottom: 0rem;
+      }
+    }
     &-grid {
       list-style: none;
       display: -ms-grid;
       display: grid;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-column-gap: 20px;
       grid-row-gap: 20px;
       padding: 0;
+
       @include respone(tab-port) {
         -ms-grid-columns: (minmax(80px, 1fr)) [auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        grid-template-columns: repeat(5, minmax(80px, 1fr));
       }
       @include respone(phone) {
         grid-column-gap: 20px;
         grid-row-gap: 20px;
+        -ms-grid-columns: (minmax(80px, 1fr)) [auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
       }
       @include respone(phone-xs) {
         grid-column-gap: 0px;
@@ -116,6 +133,7 @@
         -ms-grid-columns: (minmax(80px, 1fr)) [auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
       }
+
       li img {
         width: 50px;
         height: 50px;

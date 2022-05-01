@@ -1,13 +1,25 @@
 import gamercorner from "./projects/gamerscorner.png";
 import devseeker from "./projects/devseeker.png";
 import netflix from "./projects/netflix.png";
+import eurojackpot from "./projects/Eurojackpot.png";
 
 const projectsList = [
+  {
+    title: "Eurojackpot Simulator",
+    key: "4",
+    description:
+      "This is Eurojackpot Simulator where users can play the lotto. The project's design was based on Veikaus's website and rule is based on Eurojackpot. The project is a fun personal project built with MERN Stack from scratch.",
+    image: eurojackpot,
+    note: "Let's see how much money I will lose if this real life",
+    source: "https://github.com/quocbao19982009/Eurojackpot-Simulator",
+    live: "https://eurojackpot-simulator.herokuapp.com/",
+    technologies: ["React", "Fullstack", "Typescript", "Material UI"],
+  },
   {
     title: "Gamers Corner",
     key: "1",
     description:
-      "An E-commerce application where users can browse and make purchases with items. This is a collaboration project in which Bao Nguyen is the main front-end developer. The project was made with MERN Stack Bootstrap 5, Redux, Paypal integration.",
+      "An E-commerce application where users can browse and make purchases with items. The project was made with MERN Stack Bootstrap 5, Redux, Paypal integration.",
     image: gamercorner,
     note: "The main aim of the project is to practice and learn a full-function e-commerce site using React Js.",
     source: "https://github.com/quocbao19982009/GamersCorner",
