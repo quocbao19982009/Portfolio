@@ -28,7 +28,7 @@ const SkillsSet = () => {
         <h3>Frontend Technologies:</h3>
         <ul className="skills__list-grid">
           <li>
-            <img src={typescript} alt="jest" />
+            <img src={typescript} alt="Typescript" />
             <p>Typescript</p>
           </li>
           <li>
@@ -36,11 +36,11 @@ const SkillsSet = () => {
             <p>React</p>
           </li>
           <li>
-            <img src={mateiralUI} alt="react" />
+            <img src={mateiralUI} alt="Material UI" />
             <p>Material UI</p>
           </li>
           <li>
-            <img src={sass} alt="react" />
+            <img src={sass} alt="SASS" />
             <p>SASS</p>
           </li>
           <li>
@@ -61,16 +61,16 @@ const SkillsSet = () => {
             <p>ExpressJS</p>
           </li>
           <li>
-            <img src={nestjs} alt="express" />
-            <p>NestJS</p>
+            <img src={nestjs} alt="nestjs" />
+            <p>Nest JS</p>
           </li>
           <li>
             <img src={mongoDb} alt="mongoDb" />
             <p>MongoDB</p>
           </li>
           <li>
-            <img src={postgresSql} alt="mongoDb" />
-            <p>PostgresSQL</p>
+            <img src={postgresSql} alt="PostgreSQL" />
+            <p>PostgreSQL</p>
           </li>
         </ul>
       </div>
@@ -86,15 +86,15 @@ const SkillsSet = () => {
             <p>Jest</p>
           </li>
           <li>
-            <img src={github} alt="express" />
+            <img src={github} alt="github" />
             <p>Github Action</p>
           </li>
           <li>
-            <img src={docker} alt="mongoDb" />
-            <p>MongoDB</p>
+            <img src={docker} alt="docker" />
+            <p>Docker</p>
           </li>
           <li>
-            <img src={AWS} alt="mongoDb" />
+            <img src={AWS} alt="Amazon Web Service" />
             <p>Amazon Web Service</p>
           </li>
         </ul>
