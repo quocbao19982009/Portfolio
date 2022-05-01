@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
@@ -16,20 +16,22 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - name: Archive Build
-      uses: actions/upload-artifact@v3.0.0
-      with:
-        name: build
-        path: build
-  deploy: 
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm ci
+      - run: npm run build --if-present
+        env:
+          CI: false
+      - name: Archive Build
+        uses: actions/upload-artifact@v3.0.0
+        with:
+          name: build
+          path: build
+  deploy:
     name: Deploy
     needs: build
     runs-on: ubuntu-lastest
@@ -44,8 +46,5 @@ jobs:
         uses: w9jds/firebase-action@v2.0.0
         with:
           args: deploy --only hosting
-        env: 
+        env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN}}
-          
-    
-
