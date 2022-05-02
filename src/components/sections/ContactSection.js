@@ -16,17 +16,17 @@ const ContactSection = () => {
             <p className="email">
               <a
                 className="contact-wrapper__text"
-                href="mailto:quocbao19982009@email.com"
+                href="mailto:quocbao19982009@gmail.com"
               >
                 <i className="fas fa-envelope-square"></i>{" "}
-                quocbao19982009@gmail.com
+                baonguyendev98@gmail.com
               </a>
             </p>
             <a
               rel="noreferrer"
               target="_blank"
               className="cta-btn cta-btn--resume"
-              href="mailto:quocbao19982009@email.com"
+              href="mailto:baonguyendev98@gmail.com"
             >
               Say Hello
             </a>

@@ -34,7 +34,7 @@ const Footer = () => {
         <hr />
 
         <p className="footer__text">
-          2021 - Build by{" "}
+          2022 - Build by{" "}
           <a
             rel="noreferrer"
             href="https://github.com/quocbao19982009"

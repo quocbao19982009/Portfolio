@@ -8,9 +8,9 @@ const projectsList = [
     title: "Eurojackpot Simulator",
     key: "4",
     description:
-      "This is Eurojackpot Simulator where users can play the lotto. The project's design was based on Veikaus's website and rule is based on Eurojackpot. The project is a fun personal project built with MERN Stack from scratch.",
+      "This is Eurojackpot Simulator where users can play the lotto. The project's design was based on Veikaus's website and the rule is based on Eurojackpot. The project is a fun personal project built with MERN Stack from scratch.",
     image: eurojackpot,
-    note: "Let's see how much money I will lose if this real life",
+    note: "Ever wondering about your chance of winning a lotto? You can find out here!",
     source: "https://github.com/quocbao19982009/Eurojackpot-Simulator",
     live: "https://eurojackpot-simulator.herokuapp.com/",
     technologies: ["React", "Fullstack", "Typescript", "Material UI"],

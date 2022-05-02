@@ -17,83 +17,85 @@ import docker from "../assets/skills/docker.svg";
 
 const SkillsSet = () => {
   return (
-    <div className="skills container row">
-      <div className="skills__list col-md-12 col-sm-12">
-        <h3>Frontend Technologies:</h3>
-        <ul className="skills__list-grid">
-          <li>
-            <img src={typescript} alt="Typescript" />
-            <p>Typescript</p>
-          </li>
-          <li>
-            <img src={react} alt="react" />
-            <p>React</p>
-          </li>
-          <li>
-            <img src={mateiralUI} alt="Material UI" />
-            <p>Material UI</p>
-          </li>
-          <li>
-            <img src={sass} alt="SASS" />
-            <p>SASS</p>
-          </li>
-          <li>
-            <img src={redux} alt="redux" />
-            <p>Redux</p>
-          </li>
-        </ul>
+    <>
+      <div className="skills container row">
+        <div className="skills__list col-md-12 col-sm-12">
+          <h3>Favorite Frontend Technologies:</h3>
+          <ul className="skills__list-grid">
+            <li>
+              <img src={typescript} alt="Typescript" />
+              <p>Typescript</p>
+            </li>
+            <li>
+              <img src={react} alt="react" />
+              <p>React</p>
+            </li>
+            <li>
+              <img src={mateiralUI} alt="Material UI" />
+              <p>Material UI</p>
+            </li>
+            <li>
+              <img src={sass} alt="SASS" />
+              <p>SASS</p>
+            </li>
+            <li>
+              <img src={redux} alt="redux" />
+              <p>Redux</p>
+            </li>
+          </ul>
+        </div>
+        <div className="skills__list col-md-12 col-sm-12">
+          <h3>Favorite Backend Technologies:</h3>
+          <ul className="skills__list-grid">
+            <li>
+              <img src={nodejs} alt="nodejs" />
+              <p>Node JS</p>
+            </li>
+            <li>
+              <img src={express} alt="express" />
+              <p>Express JS</p>
+            </li>
+            <li>
+              <img src={nestjs} alt="nestjs" />
+              <p>Nest JS</p>
+            </li>
+            <li>
+              <img src={mongoDb} alt="mongoDb" />
+              <p>MongoDB</p>
+            </li>
+            <li>
+              <img src={postgresSql} alt="PostgreSQL" />
+              <p>PostgreSQL</p>
+            </li>
+          </ul>
+        </div>
+        <div className="skills__list col-md-12 col-sm-12">
+          <h3>Favorite DevOps Technologies:</h3>
+          <ul className="skills__list-grid">
+            <li>
+              <img src={git} alt="git" />
+              <p>Git</p>
+            </li>
+            <li>
+              <img src={jest} alt="jest" />
+              <p>Jest</p>
+            </li>
+            <li>
+              <img src={github} alt="github" />
+              <p>Github Action</p>
+            </li>
+            <li>
+              <img src={docker} alt="docker" />
+              <p>Docker</p>
+            </li>
+            <li>
+              <img src={AWS} alt="Amazon Web Service" />
+              <p>Amazon Web Service</p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="skills__list col-md-12 col-sm-12">
-        <h3>Backend Technologies:</h3>
-        <ul className="skills__list-grid">
-          <li>
-            <img src={nodejs} alt="nodejs" />
-            <p>Node JS</p>
-          </li>
-          <li>
-            <img src={express} alt="express" />
-            <p>ExpressJS</p>
-          </li>
-          <li>
-            <img src={nestjs} alt="nestjs" />
-            <p>Nest JS</p>
-          </li>
-          <li>
-            <img src={mongoDb} alt="mongoDb" />
-            <p>MongoDB</p>
-          </li>
-          <li>
-            <img src={postgresSql} alt="PostgreSQL" />
-            <p>PostgreSQL</p>
-          </li>
-        </ul>
-      </div>
-      <div className="skills__list col-md-12 col-sm-12">
-        <h3>DevOps Technologies:</h3>
-        <ul className="skills__list-grid">
-          <li>
-            <img src={git} alt="git" />
-            <p>Git</p>
-          </li>
-          <li>
-            <img src={jest} alt="jest" />
-            <p>Jest</p>
-          </li>
-          <li>
-            <img src={github} alt="github" />
-            <p>Github Action</p>
-          </li>
-          <li>
-            <img src={docker} alt="docker" />
-            <p>Docker</p>
-          </li>
-          <li>
-            <img src={AWS} alt="Amazon Web Service" />
-            <p>Amazon Web Service</p>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </>
   );
 };
 
